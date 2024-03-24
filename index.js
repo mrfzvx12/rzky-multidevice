@@ -33,10 +33,10 @@ function start(file) {
 		isRunning = false;
 		console.error("Exited with code:", code);
 		//if (code === 0 || code === 1) return;
-		fs.watchFile(args[0], () => {
-			fs.unwatchFile(args[0]);
-			start(file);
-		});
+		// fs.watchFile(args[0], () => {
+		// 			fs.unwatchFile(args[0]);
+		start(file);
+		// 		});
 	});
 	// console.log(p)
 }
